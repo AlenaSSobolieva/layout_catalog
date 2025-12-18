@@ -23,6 +23,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  transition: color 0.3s;
 }
 
 .nav__link,
@@ -32,7 +33,7 @@
 
 .nav__link.is-active,
 .nav__link.is-active:visited {
-  color: var(--blue-color);
+  color: $card-button-color;
 }
 
 .nav__link.is-active::after {

@@ -1,4 +1,4 @@
-.catalog__card {
+.card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -11,13 +11,13 @@
   border-radius: 5px;
   padding: 32px 16px 16px;
 
-  &-image {
+  &__image {
     margin-bottom: 40px;
     width: 160px;
     height: 134px;
   }
 
-  &-name {
+  &__name {
     display: flex;
     align-self: start;
 
@@ -33,7 +33,7 @@
     }
   }
 
-  &-code {
+  &__code {
     margin-bottom: 16px;
     align-self: flex-start;
     font-weight: 400;
@@ -42,7 +42,7 @@
     color: $card-subtext-color;
   }
 
-  &-review {
+  &__review {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -52,7 +52,7 @@
     padding: 0;
   }
 
-  &-review-amount {
+  &__review-amount {
     display: flex;
     align-self: flex-end;
     font-weight: 400;
@@ -61,7 +61,7 @@
     color: $catalog-text-color;
   }
 
-  &-price {
+  &__price {
     width: 166px;
     height: 18px;
     margin-bottom: 16px;
@@ -71,21 +71,21 @@
     text-align: center;
   }
 
-  &-price-title {
+  &__price-title {
     color: $card-subtext-color;
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
   }
 
-  &-price-amount {
+  &__price-amount {
     font-weight: 700;
     font-size: 16px;
     line-height: 18px;
     color: $catalog-text-color;
   }
 
-  &-button {
+  &__button {
     box-sizing: border-box;
     width: 100%;
     height: 40px;
@@ -106,8 +106,8 @@
 
     &:hover,
     &[data-qa='card-hover']:hover {
-      background: #fff;
-      color: #00acdc;
+      background: $main-card-color;
+      color: $card-button-color;
     }
   }
 }
