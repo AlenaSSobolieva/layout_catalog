@@ -12,13 +12,13 @@
 }
 
 .nav__item + .nav__item {
-  margin-left: 20px;
+  margin-left: $nav-item-gap;
 }
 
 .nav__link {
   text-transform: uppercase;
   text-decoration: none;
-  height: 60px;
+  height: $nav-link-height;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -42,11 +42,11 @@
   left: 0;
   bottom: 0; /* adjust distance from text */
   width: 100%;
-  height: 4px;
+  height: $active-link-underline;
   background-color: $card-button-color;
   border-radius: 2px;
 }
 
 .nav__link:hover:not(.is-active) {
-  color: var(--blue-color);
+  color: $card-button-color;
 }
